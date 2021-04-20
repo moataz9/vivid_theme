@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About us</title>
+    <link rel="stylesheet" href="./bootstrap-4.5.2-dist/css/bootstrap.min.css" />
+    <!-- fontswesome -->
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="./fontawesome/css/v4-shims.min.css" />
+    <!-- font elegent -->
+    <link rel="stylesheet" href="./elegent_font/style.css" />
+    <!-- aos font -->
+    <link rel="stylesheet" href="./css/aos.css" />
+    <!-- style -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- slider.css -->
+    <link rel="stylesheet" href="./css/prograss_bar_slider.css" />
+  </head>
+  <body>
+    <!-- vivid navbar  -->
+    <nav class="navbar navbar-expand-lg main__navbar py-4 nav_dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img class="logo" src="./images/logo/vivid-logo.png" alt="logo" />
+        </a>
+        <span class="pr-5 ml-auto d-inline-block d-lg-none" id="nav_bars" style="cursor: pointer">
+          <i class="fa fa-bars fa-2x mt-1" style="color: #acacac"></i>
+        </span>
+      </div>
+
+      <div class="collapse navbar-collapse" id="vivid_main_navbar">
+        <ul class="navbar-nav ml-auto position-relative close_on_search">
+          <span id="projects" class="py-3" style="cursor: pointer">
+            <i class="fa fa-bars text-black-50"></i>
+          </span>
+          <li class="nav-item mr-5">
+            <a class="nav-link" href="./projects.html">projects</a>
+            <div id="project_toggler" class="text-capitalize border" style="display: none">
+              <a href="#" class="px-2 py-1 text-black-50 text-decoration-none d-block">commerical</a>
+              <a href="#" class="px-2 py-1 text-black-50 text-decoration-none d-block">residential</a>
+              <a href="#" class="px-2 py-1 text-black-50 text-decoration-none d-block">Architecture</a>
+            </div>
+          </li>
+          <li class="nav-item mr-5 active">
+            <a class="nav-link" href="./about-us.html">about</a>
+          </li>
+          <li class="nav-item mr-5">
+            <a class="nav-link" href="./media.html">Media</a>
+          </li>
+          <li class="nav-item mr-5">
+            <a class="nav-link" href="./blog.html">blog</a>
+          </li>
+          <li class="nav-item mr-5">
+            <a class="nav-link" href="./careers.html">careers</a>
+          </li>
+          <li class="nav-item mr-5">
+            <a class="nav-link" href="./cantact.html">contact</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item mr-1 position-relative">
+            <form action="#" id="nav__search" style="display: none">
+              <input type="text" placeholder="search..." />
+            </form>
+          </li>
+          <li class="nav-item mr-5" id="open_search_input" style="cursor: pointer">
+            <i class="fa fa-search text-black-50 px-2 py-3"></i>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- company philosophy -->
+    <section data-nav-color="var(--body-bg)" class="destance-y pt-4">
+      <div class="container">
+        <h2 class="w_20 mb-4" data-aos="fade-down">company philosophy</h2>
+        <div class="row row-cols-1 row-cols-lg-2">
+          <div class="col">
+            <p data-aos="fade-right">
+              The basic philosophy of our studio is to create individual, aesthetically stunning solutions for our customers by lightning-fast development of
+              projects employing unique styles and architecture. Even if you don't have a ready sketch of what you want - we will help you get the result you
+              dreamed of.
+            </p>
+          </div>
+          <div class="col">
+            <p data-aos="fade-right">
+              We can also help you create harmony out of seemingly completely incompatible elements in the interior or the exterior design. Do you want to
+              combine classics and abstract art? Modern and retro? Love everything associated with the 1940's? Want a solid roomy design, but don't have much
+              room? No problem! For us, there are no tasks too tough. Every problem succumbs to our relentless focus!.
+            </p>
+          </div>
+          <div class="col">
+            <a class="custom_btn py-3 px-5" data-aos="flip-left">learn more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- persons carosuel -->
+    <section class="container">
+      <div id="persons-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+        <div class="slider__footer">
+          <div class="slider__progress">
+            <span class="current_slider_num"></span>
+            <ol class="slider__progress--list">
+              <li title="1" data-target="#persons-carousel" data-slide-to="0"></li>
+              <li title="2" data-target="#persons-carousel" data-slide-to="1"></li>
+              <li title="3" data-target="#persons-carousel" data-slide-to="2"></li>
+            </ol>
+            <span class="count_slider_num"></span>
+          </div>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images/about/about1.jpg" class="d-block w-100" alt="about 1" />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/about/about2.jpg" class="d-block w-100" alt="about 2" />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/about/about3.jpg" class="d-block w-100" alt="about 3" />
+          </div>
+        </div>
+        <a class="carousel_prev" href="#persons-carousel" role="button" data-slide="prev">
+          <span class="custom_btn p-3 slider__prev"><i class="fa fa-chevron-left fa-2x"></i></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel_next" href="#persons-carousel" role="button" data-slide="next">
+          <span class="custom_btn p-3 slider__next"><i class="fa fa-chevron-right fa-2x"></i></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- our strenghts section -->
+    <section class="container destance-y">
+      <div class="row row-cols-1 row-cols-lg-2 pb-5 cus_p_x" data-word="power">
+        <div class="col"></div>
+        <div class="col">
+          <h2 class="h1" data-aos="fade-down">our strenghts</h2>
+          <p class="py-4 mb-0" data-aos="fade-right">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam necessitatibus perferendis magni facere obcaecati ipsam, excepturi consequatur quos
+          </p>
+        </div>
+      </div>
+      <!-- our strengths section -->
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 cus_p_x">
+        <div class="col word_small" data-word="home">
+          <div class="pr-5" data-aos="fade-up">
+            <div class="sect__header">
+              <img class="sect__header--img" src="./images/about/about_icons/home.svg" alt="home" />
+              <div class="sect__header--text">
+                <p>3</p>
+                <p>Lorem, ipsum dolor.</p>
+              </div>
+            </div>
+            <div class="sect__content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, iste. Ipsam perspiciatis illo facere libero unde tenetur vitae illum
+                itaque molestias sint necessitatibus a, possimus magni sapiente, quisquam voluptatibus nobis.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col word_small" data-word="people">
+          <div class="pr-5" data-aos="fade-up">
+            <div class="sect__header">
+              <img class="sect__header--img" src="./images/about/about_icons/people-1.svg" alt="people-1.svg" />
+              <div class="sect__header--text">
+                <p>3</p>
+                <p>Lorem, ipsum dolor.</p>
+              </div>
+            </div>
+            <div class="sect__content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, iste. Ipsam perspiciatis illo facere libero unde tenetur vitae illum
+                itaque molestias sint necessitatibus a, possimus magni sapiente, quisquam voluptatibus nobis.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col word_small" data-word="pencil">
+          <div class="pr-5" data-aos="fade-up">
+            <div class="sect__header">
+              <img class="sect__header--img" src="./images/about/about_icons/pencil-1.svg" alt="pencil-1.svg" />
+              <div class="sect__header--text">
+                <p>3</p>
+                <p>Lorem, ipsum dolor.</p>
+              </div>
+            </div>
+            <div class="sect__content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, iste. Ipsam perspiciatis illo facere libero unde tenetur vitae illum
+                itaque molestias sint necessitatibus a, possimus magni sapiente, quisquam voluptatibus nobis.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col word_small" data-word="stars">
+          <div class="pr-5" data-aos="fade-up">
+            <div class="sect__header">
+              <img class="sect__header--img" src="./images/about/about_icons/star-1.svg" alt="star-1.svg" />
+              <div class="sect__header--text">
+                <p>3</p>
+                <p>Lorem, ipsum dolor.</p>
+              </div>
+            </div>
+            <div class="sect__content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, iste. Ipsam perspiciatis illo facere libero unde tenetur vitae illum
+                itaque molestias sint necessitatibus a, possimus magni sapiente, quisquam voluptatibus nobis.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col word_small" data-word="maps">
+          <div class="pr-5" data-aos="fade-up">
+            <div class="sect__header">
+              <img class="sect__header--img" src="./images/about/about_icons/country.svg" alt="country.svg" />
+              <div class="sect__header--text">
+                <p>3</p>
+                <p>Lorem, ipsum dolor.</p>
+              </div>
+            </div>
+            <div class="sect__content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, iste. Ipsam perspiciatis illo facere libero unde tenetur vitae illum
+                itaque molestias sint necessitatibus a, possimus magni sapiente, quisquam voluptatibus nobis.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col word_small" data-word="design">
+          <div class="pr-5" data-aos="fade-up">
+            <div class="sect__header">
+              <img class="sect__header--img w_20" src="./images/about/about_icons/graphic-design2.png" alt="graphic-design2.png" />
+              <div class="sect__header--text">
+                <p>3</p>
+                <p>Lorem, ipsum dolor.</p>
+              </div>
+            </div>
+            <div class="sect__content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, iste. Ipsam perspiciatis illo facere libero unde tenetur vitae illum
+                itaque molestias sint necessitatibus a, possimus magni sapiente, quisquam voluptatibus nobis.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- team section -->
+    <section  data-nav-color="#1a1a1a" class="team py-5">
+      <div class="container destance-y-equal">
+        <!-- Co-Founder -->
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+          <div class="col">
+            <div class="d-flex justify-content-center team__content team__main--header">
+              <h3 class="text-capitalize align-self-center text-white">co-founder</h3>
+            </div>
+          </div>
+          <!-- team member -->
+          <div class="col">
+            <div class="team__content">
+              <img class="w-100 h-100" src="./images/team/team-1.jpg" alt="team one" />
+              <!-- showen on hover -->
+              <div class="team__text">
+                <h3 class="team__text--header">dana vaughn</h3>
+                <p class="team__text--sup-header">CEO &amp; Founder</p>
+                <p class="team__text--desc">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam sint accusantium optio reiciendis? A est quas officia earum nostrum quia
+                  sint unde eveniet praesentium! Architecto cum necessitatibus accusantium aut vero.
+                </p>
+                <div class="team__text--s-links">
+                  <a href="#"><i class="fa fa-facebook fa-2x"></i></a>
+                  <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+                  <a href="#"><i class="fa fa-instagram fa-2x"></i></a>
+                </div>
+              </div>
+              <!-- fixed team header -->
+              <div class="team__header">
+                <h3 class="team__text--header">dana vaughn</h3>
+                <p class="team__text--sup-header">CEO &amp; Founder</p>
+              </div>
+            </div>
+          </div>
+          <!-- team member -->
+          <div class="col">
+            <div class="team__content">
+              <img class="w-100 h-100" src="./images/team/team-1.jpg" alt="team one" />
+              <!-- showen on hover -->
+              <div class="team__text">
+                <h3 class="team__text--header">dana vaughn</h3>
+                <p class="team__text--sup-header">CEO &amp; Founder</p>
+                <p class="team__text--desc">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam sint accusantium optio reiciendis? A est quas officia earum nostrum quia
+                  sint unde eveniet praesentium! Architecto cum necessitatibus accusantium aut vero.
+                </p>
+                <div class="team__text--s-links">
+                  <a href="#"><i class="fa fa-facebook fa-2x"></i></a>
+                  <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+                  <a href="#"><i class="fa fa-instagram fa-2x"></i></a>
+                </div>
+              </div>
+              <!-- fixed team header -->
+              <div class="team__header">
+                <h3 class="team__text--header">dana vaughn</h3>
+                <p class="team__text--sup-header">CEO &amp; Founder</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Architecture -->
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+          <div class="col">
+            <div class="d-flex justify-content-center team__content team__main--header">
+              <h3 class="text-capitalize align-self-center text-white">Architecture</h3>
+            </div>
+          </div>
+          <!-- team member -->
+          <div class="col">
+            <div class="team__content">
+              <img class="w-100 h-100" src="./images/team/team-1.jpg" alt="team one" />
+              <!-- showen on hover -->
+              <div class="team__text">
+                <h3 class="team__text--header">dana vaughn</h3>
+                <p class="team__text--sup-header">CEO &amp; Founder</p>
+                <p class="team__text--desc">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam sint accusantium optio reiciendis? A est quas officia earum nostrum quia
+                  sint unde eveniet praesentium! Architecto cum necessitatibus accusantium aut vero.
+                </p>
+                <div class="team__text--s-links">
+                  <a href="#"><i class="fa fa-facebook fa-2x"></i></a>
+                  <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+                  <a href="#"><i class="fa fa-instagram fa-2x"></i></a>
+                </div>
+              </div>
+              <!-- fixed team header -->
+              <div class="team__header">
+                <h3 class="team__text--header">dana vaughn</h3>
+                <p class="team__text--sup-header">CEO &amp; Founder</p>
+              </div>
+            </div>
+          </div>
+          <!-- team member -->
+          <div class="col">
+            <div class="team__content">
+              <img class="w-100 h-100" src="./images/team/team-1.jpg" alt="team one" />
+              <!-- showen on hover -->
+              <div class="team__text">
+                <h3 class="team__text--header">dana vaughn</h3>
+                <p class="team__text--sup-header">CEO &amp; Founder</p>
+                <p class="team__text--desc">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam sint accusantium optio reiciendis? A est quas officia earum nostrum quia
+                  sint unde eveniet praesentium! Architecto cum necessitatibus accusantium aut vero.
+                </p>
+                <div class="team__text--s-links">
+                  <a href="#"><i class="fa fa-facebook fa-2x"></i></a>
+                  <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+                  <a href="#"><i class="fa fa-instagram fa-2x"></i></a>
+                </div>
+              </div>
+              <!-- fixed team header -->
+              <div class="team__header">
+                <h3 class="team__text--header">dana vaughn</h3>
+                <p class="team__text--sup-header">CEO &amp; Founder</p>
+              </div>
+            </div>
+          </div>
+          <!-- team member -->
+          <div class="col mb-0">
+            <div class="team__content">
+              <img class="w-100 h-100" src="./images/team/team-1.jpg" alt="team one" />
+              <!-- showen on hover -->
+              <div class="team__text">
+                <h3 class="team__text--header">dana vaughn</h3>
+                <p class="team__text--sup-header">CEO &amp; Founder</p>
+                <p class="team__text--desc">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam sint accusantium optio reiciendis? A est quas officia earum nostrum quia
+                  sint unde eveniet praesentium! Architecto cum necessitatibus accusantium aut vero.
+                </p>
+                <div class="team__text--s-links">
+                  <a href="#"><i class="fa fa-facebook fa-2x"></i></a>
+                  <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+                  <a href="#"><i class="fa fa-instagram fa-2x"></i></a>
+                </div>
+              </div>
+              <!-- fixed team header -->
+              <div class="team__header">
+                <h3 class="team__text--header">dana vaughn</h3>
+                <p class="team__text--sup-header">CEO &amp; Founder</p>
+              </div>
+            </div>
+          </div>
+          <!-- team member -->
+          <div class="col mb-0">
+            <div class="team__content">
+              <img class="w-100 h-100" src="./images/team/team-1.jpg" alt="team one" />
+              <!-- showen on hover -->
+              <div class="team__text">
+                <h3 class="team__text--header">dana vaughn</h3>
+                <p class="team__text--sup-header">CEO &amp; Founder</p>
+                <p class="team__text--desc">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam sint accusantium optio reiciendis? A est quas officia earum nostrum quia
+                  sint unde eveniet praesentium! Architecto cum necessitatibus accusantium aut vero.
+                </p>
+                <div class="team__text--s-links">
+                  <a href="#"><i class="fa fa-facebook fa-2x"></i></a>
+                  <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+                  <a href="#"><i class="fa fa-instagram fa-2x"></i></a>
+                </div>
+              </div>
+              <!-- fixed team header -->
+              <div class="team__header">
+                <h3 class="team__text--header">dana vaughn</h3>
+                <p class="team__text--sup-header">CEO &amp; Founder</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- our rewords -->
+    <section data-nav-color="var(--body-bg)" class="container destance-y">
+      <div class="row row-cols-1 row-cols-lg-2 mb-4" data-word="rewords">
+        <div class="col"></div>
+        <div class="col">
+          <h2 class="h1" data-aos="fade-down">our rewords</h2>
+          <p class="py-4 mb-0" data-aos="fade-right">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam necessitatibus perferendis magni facere obcaecati ipsam, excepturi consequatur quos
+          </p>
+        </div>
+      </div>
+      <!-- timeline -->
+      <div class="container-fluid time__line">
+        <div class="row row-cols-1 row-cols-sm-2">
+          <div class="col">
+            <h5>Catch seafood restaurent</h5>
+            <h6>Shortlisted</h6>
+          </div>
+          <div class="col">
+            <img src="./images/about-logos/logo-one.png" alt="logo restaurent 1" />
+            <h5>restaurent &amp; bar design awards</h5>
+          </div>
+          <div class="col">
+            <h5>restaurent &amp; bar design awards</h5>
+            <img src="./images/about-logos/logo-2.png" alt="logo restaurent 2" />
+          </div>
+          <div class="col">
+            <h5>SBID international design awards</h5>
+            <h6>Finalist</h6>
+          </div>
+          <div class="col">
+            <h5>Catch seafood restaurent</h5>
+            <h6>the grant prix</h6>
+          </div>
+          <div class="col">
+            <img src="./images/about-logos/logo-3.png" alt="logo restaurent 3" />
+            <p>interior of the year</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer Section -->
+    <footer data-nav-color="#1a1a1a" style="background-image: url(./images/footer-bg.jpg)">
+      <div class="container px-4">
+        <!-- contact row -->
+        <div class="row row-cols-1 row-cols-lg-2 no-gutters py-3 py-lg-5" data-aos="fade-right">
+          <div class="col">
+            <h4 class="mb-0 text-white text-uppercase pl-0" style="font-size: 2.5rem">Ready To Work With Us?</h4>
+          </div>
+          <div class="col mb-5 mb-lg-0">
+            <form action="#">
+              <div class="email__form">
+                <input class="w-75" type="email" placeholder="Enter your email" />
+                <button type="submit">
+                  <i class="fa fa-send"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- info row -->
+        <div class="row row-cols-1 row-cols-lg-3 no-gutters py-3 py-lg-5 border-top border-bottom">
+          <div class="col">
+            <div class="footer__content" data-aos="fade-up">
+              <h5 class="h3 text-white">vivid</h5>
+              <ul class="list-unstyled pr-0">
+                <li class="footer__content--address">
+                  <p>
+                    7176 Blue Spring <br />
+                    Lane Mansoura, Egypt
+                  </p>
+                </li>
+                <li class="footer__content--info">
+                  Info@vivida-eg.com <br />
+                  +84 123 456 789
+                </li>
+                <li class="footer__content--links">
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col">
+            <div class="footer__content ml-lg-5" data-aos="fade-up" data-aos-delay="200">
+              <h5 class="h3 text-white mb-2 mb-lg-5">Company</h5>
+              <ul class="list-unstyled pr-0">
+                <li><a href="./about-us.html">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="./projects.html">Our Works</a></li>
+                <li><a href="#">Career</a></li>
+                <li><a href="#">FAQs</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col">
+            <div class="footer__content ml-lg-5" data-aos="fade-up" data-aos-delay="400">
+              <h5 class="h3 text-white mb-2 mb-lg-5">Services</h5>
+              <ul class="list-unstyled pr-0">
+                <li><a href="#">Architecture</a></li>
+                <li><a href="#">Interior Design</a></li>
+                <li><a href="#">Exterior Design</a></li>
+                <li><a href="#">Planning</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- copyrights -->
+        <div class="row">
+          <p class="col py-4 copyrights text-capitalize mb-0">
+            Copyright &copy; 2021 All rights reserved | This template is made with <i class="fa fa-heart-o"></i> by Moataz
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- FIXED MENU -->
+    <section id="fixed_menu" class="position-absolute w-100 h-100 d-none" style="background-color: #1a1a1a">
+      <div class="container py-4 fixed-top" style="background-color: inherit">
+        <div class="d-flex justify-content-around">
+          <img src="./images/logo/vivid-logo.png" alt="logo for vivid" class="logo d-block" />
+          <span id="toggle_fixed_menu" class="d-block ml-auto" style="cursor: pointer">
+            <i class="fa fa-times text-white-50 fa-3x"></i>
+          </span>
+        </div>
+      </div>
+      <div class="container destance-y">
+        <div class="row">
+          <div class="col-lg-9">
+            <div class="row row-cols-1 row-cols-lg-2">
+              <div class="col mb-3">
+                <h4 class="text-white-50 text-uppercase">phone number</h4>
+                <h6 class="text-white font-weight-bold">0123&nbsp;456&nbsp;783</h6>
+              </div>
+              <div class="col mb-3">
+                <h4 class="text-white-50 text-uppercase">email address</h4>
+                <h6 class="text-white font-weight-bold">info@vivida.com</h6>
+              </div>
+              <div class="col mb-3">
+                <h4 class="text-white-50 text-uppercase">office location</h4>
+                <h6 class="text-white font-weight-bold text-capitalize">
+                  7176 blue spring lane, <br />
+                  mansoura, Egypt
+                </h6>
+              </div>
+            </div>
+            <p class="w-50 h6">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, mollitia? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab cum aliquid,
+            </p>
+            <a href="#" class="custom_btn px-5 py-3 text-uppercase my-4">send request</a>
+          </div>
+          <div class="col-lg-3">
+            <ul class="list-unstyled p-0">
+              <li class="pb-3">
+                <a href="./projects" class="h3 text-white text-capitalize text-decoration-none">projects</a>
+              </li>
+              <li class="pb-3">
+                <a href="./about-us.html" class="h3 text-white text-capitalize text-decoration-none">about</a>
+              </li>
+              <li class="pb-3">
+                <a href="./media.html" class="h3 text-white text-capitalize text-decoration-none">media</a>
+              </li>
+              <li class="pb-3">
+                <a href="./blog.html" class="h3 text-white text-capitalize text-decoration-none">blog</a>
+              </li>
+              <li class="pb-3">
+                <a href="./careers.html" class="h3 text-white text-capitalize text-decoration-none">careers</a>
+              </li>
+              <li class="pb-3">
+                <a href="./cantact.html" class="h3 text-white text-capitalize text-decoration-none">contact</a>
+              </li>
+              <li class="position-relative">
+                <i class="fa fa-search text-white pr-2" style="font-size: 1.3rem; position: relative; top: 8px"></i>
+                <form action="#" id="nav__search" class="d-inline-block position-relative">
+                  <input class="pb-3" type="text" placeholder="search..." />
+                </form>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./bootstrap-4.5.2-dist/js/bootstrap.min.js"></script>
+    <script src="./js/aos.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/prograss_bar_slider.js"></script>
+  </body>
+</html>

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>try2</title>
+    <link rel="stylesheet" href="./bootstrap-4.5.2-dist/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="./fontawesome/css/v4-shims.min.css" />
+    <!-- font elegent -->
+    <link rel="stylesheet" href="./elegent_font/style.css" />
+    <!-- aos font -->
+    <link rel="stylesheet" href="./css/aos.css" />
+    <!-- style -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- slider.css -->
+    <link rel="stylesheet" href="./css/prograss_bar_slider.css" />
+  </head>
+  <body>
+    <p class="mx-auto w-25 d-block text-center">
+      <button class="btn btn-primary" data-toggle="collapse" type="button" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        Button with data-target
+      </button>
+      <button class="btn btn-primary" data-toggle="collapse" type="button" data-target="[data-cate]" aria-expanded="false" aria-controls="collapseExample">
+        all
+      </button>
+    </p>
+    <div class="collapse" data-cate="collapseExample">
+      <div class="card card-body">
+        Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+      </div>
+    </div>
+    <div class="collapse" id="collapseExample">
+      <div class="card card-body">
+        Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+      </div>
+    </div>
+    <div class="collapse" data-cate="collapseExample">
+      <div class="card card-body">
+        Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+      </div>
+    </div>
+    <div class="collapse" id="collapseExample">
+      <div class="card card-body">
+        Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+      </div>
+    </div>
+
+    <section class="container destance-y pt-4">
+      <h3>Blog</h3>
+      <div class="btn-group my-3">
+        <button class="btn text-uppercase" data-toggle="collapse" type="button" data-target="[data-category]" aria-expanded="false">All</button>
+        <button class="btn text-uppercase" data-toggle="collapse" type="button" data-target="[data-category='publications']" aria-expanded="false">
+          publications
+        </button>
+      </div>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 no-gutters">
+        <div class="col collapse">
+          <div class="blog__img">
+            <img class="w-100" src="./images/blog/blog-toggler/user1.jpg" alt="user one" />
+            <div class="blog__img--content">
+              <span class="blog__img--address">Lorem, ipsum dolor.</span>
+              <span class="h5">Lorem ipsum dolor sit amet.</span>
+            </div>
+          </div>
+        </div>
+        <div class="col collapse">
+          <div class="blog__img">
+            <img class="w-100" src="./images/blog/blog-toggler/place-1.jpg" alt="place one" />
+            <div class="blog__img--content">
+              <span class="blog__img--address">Lorem, ipsum dolor.</span>
+              <span class="h5">Lorem ipsum dolor sit amet.</span>
+            </div>
+          </div>
+        </div>
+        <div class="col collapse">
+          <div class="blog__img">
+            <img class="w-100" src="./images/blog/blog-toggler/place-2.jpg" alt="place one" />
+            <div class="blog__img--content">
+              <span class="blog__img--address">Lorem, ipsum dolor.</span>
+              <span class="h5">Lorem ipsum dolor sit amet.</span>
+            </div>
+          </div>
+        </div>
+        <div class="col collapse" data-category="publications">
+          <div class="blog__img">
+            <img class="w-100" src="./images/blog/blog-toggler/place-3.jpg" alt="place one" />
+            <div class="blog__img--content">
+              <span class="blog__img--address">Lorem, ipsum dolor.</span>
+              <span class="h5">Lorem ipsum dolor sit amet.</span>
+            </div>
+          </div>
+        </div>
+        <div class="col collapse">
+          <div class="blog__img">
+            <img class="w-100" src="./images/blog/blog-toggler/place-4.jpg" alt="place one" />
+            <div class="blog__img--content">
+              <span class="blog__img--address">Lorem, ipsum dolor.</span>
+              <span class="h5">Lorem ipsum dolor sit amet.</span>
+            </div>
+          </div>
+        </div>
+        <div class="col collapse">
+          <div class="blog__img">
+            <img class="w-100" src="./images/blog/blog-toggler/place-5.jpg" alt="place one" />
+            <div class="blog__img--content">
+              <span class="blog__img--address">Lorem, ipsum dolor.</span>
+              <span class="h5">Lorem ipsum dolor sit amet.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <hr />
+    <hr />
+    <hr />
+    <hr />
+    <hr />
+    <hr />
+    <div class="accordion" id="accordionExample">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h2 class="mb-0">
+            <button
+              class="btn btn-link btn-block text-left"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              Collapsible Group Item #1
+            </button>
+          </h2>
+        </div>
+
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+          <div class="card-body">
+            Some placeholder content for the first accordion panel. This panel is shown by default, thanks to the <code>.show</code> class.
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h2 class="mb-0">
+            <button
+              class="btn btn-link btn-block text-left collapsed"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              Collapsible Group Item #2
+            </button>
+          </h2>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+          <div class="card-body">Some placeholder content for the second accordion panel. This panel is hidden by default.</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h2 class="mb-0">
+            <button
+              class="btn btn-link btn-block text-left collapsed"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              Collapsible Group Item #3
+            </button>
+          </h2>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+          <div class="card-body">And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by default.</div>
+        </div>
+      </div>
+    </div>
+    <!-- / -->
+    <!-- / -->
+    <!-- / -->
+    <!-- / -->
+    <!-- / -->
+    <!-- / -->
+
+    <section id="fixed_menu" class="fixed-top w-100 h-100" style="background-color: #1a1a1a">
+      <div class="container py-4">
+        <div class="d-flex justify-content-around">
+          <img src="./images/logo/vivid-logo.png" alt="logo for vivid" class="logo d-block" />
+          <span id="toggle_fixed_menu" class="d-block ml-auto" style="cursor: pointer;">
+            <i class="fa fa-times text-white-50 fa-3x"></i>
+          </span>
+        </div>
+      </div>
+      <div class="container destance-y">
+        <div class="row">
+          <div class="col-lg-9">
+            <div class="row row-cols-1 row-cols-lg-2">-
+              <div class="col mb-3">
+                <h4 class="text-white-50 text-uppercase">phone number</h4>
+                <h6 class="text-white font-weight-bold">0123&nbsp;456&nbsp;783</h6>
+              </div>
+              <div class="col mb-3">
+                <h4 class="text-white-50 text-uppercase">email address</h4>
+                <h6 class="text-white font-weight-bold">info@vivida.com</h6>
+              </div>
+              <div class="col mb-3">
+                <h4 class="text-white-50 text-uppercase">office location</h4>
+                <h6 class="text-white font-weight-bold text-capitalize">
+                  7176 blue spring lane, <br />
+                  mansoura, Egypt
+                </h6>
+              </div>
+            </div>
+            <p class="w-50 h6">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, mollitia? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab cum aliquid,
+            </p>
+            <a href="#" class="custom_btn px-5 py-3 text-uppercase mt-4">send request</a>
+          </div>
+          <div class="col-lg-3">
+            <ul class="list-unstyled p-0">
+              <li class="pb-3">
+                <a href="./projects" class="h3 text-white text-capitalize text-decoration-none">projects</a>
+              </li>
+              <li class="pb-3">
+                <a href="./about-us.html" class="h3 text-white text-capitalize text-decoration-none">about</a>
+              </li>
+              <li class="pb-3">
+                <a href="./media.html" class="h3 text-white text-capitalize text-decoration-none">media</a>
+              </li>
+              <li class="pb-3">
+                <a href="./blog.html" class="h3 text-white text-capitalize text-decoration-none">blog</a>
+              </li>
+              <li class="pb-3">
+                <a href="./careers.html" class="h3 text-white text-capitalize text-decoration-none">careers</a>
+              </li>
+              <li class="pb-3">
+                <a href="./cantact.html" class="h3 text-white text-capitalize text-decoration-none">contact</a>
+              </li>
+              <li class="position-relative">
+                <i class="fa fa-search text-white pr-2" style="font-size: 1.3rem; position: relative; top: 8px"></i>
+                <form action="#" id="nav__search" class="d-inline-block position-relative">
+                  <input class="pb-3" type="text" placeholder="search..." />
+                </form>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="col">
+      <div class="row row-cols-1 row-cols-lg-2 px-5 my-5">
+        <div class="col">
+          <div class="border-right">
+            <h4 class="text-white-50 text-uppercase">phone number</h4>
+            <h6 class="text-white font-weight-bold">0123&nbsp;456&nbsp;783</h6>
+          </div>
+        </div>
+        <div class="col">
+          <div class="border-right">
+            <h4 class="text-white-50 text-uppercase">email address</h4>
+            <h6 class="text-white font-weight-bold">info@vivida.com</h6>
+          </div>
+        </div>
+        <div class="col">
+          <h4 class="text-white-50 text-uppercase">office location</h4>
+          <h6 class="text-white font-weight-bold text-capitalize">
+            7176 blue spring lane, <br />
+            mansoura, Egypt
+          </h6>
+        </div>
+      </div>
+    </div>
+    <div class="col w-75">
+      <div class="row row-cols-1 row-cols-lg-2 px-5 my-5">
+        <div class="col">
+          <div class="border-right">
+            <h4 class="text-white-50 text-uppercase">phone number</h4>
+            <h6 class="text-white font-weight-bold">0123&nbsp;456&nbsp;783</h6>
+          </div>
+        </div>
+        <div class="col">
+          <div class="border-right">
+            <h4 class="text-white-50 text-uppercase">email address</h4>
+            <h6 class="text-white font-weight-bold">info@vivida.com</h6>
+          </div>
+        </div>
+        <div class="col">
+          <h4 class="text-white-50 text-uppercase">office location</h4>
+          <h6 class="text-white font-weight-bold text-capitalize">
+            7176 blue spring lane, <br />
+            mansoura, Egypt
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/proper1.12.9.js"></script>
+    <script src="./bootstrap-4.5.2-dist/js/bootstrap.min.js"></script>
+    <script src="./js/aos.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
